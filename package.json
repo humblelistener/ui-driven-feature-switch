@@ -1,0 +1,26 @@
+{
+  "name": "ui-driven-feature-switch",
+  "version": "0.0.1",
+  "description": "a simple javascript based ui drive feature switch that has supports server application",
+  "main": "feature.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kpadmanabhan/ui-driven-feature-switch.git"
+  },
+  "keywords": [
+    "feature-switch;",
+    "feature-toogle;",
+    "ui-driven-feature;",
+    "js-feature-switch;",
+    "javascript-feature-switch"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpadmanabhan/ui-driven-feature-switch/issues"
+  },
+  "homepage": "https://github.com/kpadmanabhan/ui-driven-feature-switch"
+}
