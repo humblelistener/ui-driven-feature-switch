@@ -23,27 +23,30 @@ define([
         return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
 
-    var featureToggles = {
-        "new-zuji-flightsearch": false,
+    var features = {
+        // sample data here, to enable a feature by default, uncomment the following line
+        // "feature1": true,
+        // to disable a feature by defaut, uncomment the following line
+        // "feature2": false,
     };
 
-    setFeatureTogglesFromQueryString(featureToggles);
+    setFeatureTogglesFromQueryString(features);
     
     var feature = {        
        isEnabled: function (featureName) {
-            return featureToggles[featureName];
+            return features[featureName];
        },
        all: function () {
            var all = [];
 
-           _.each(featureToggles, function (toggleName) {
+           _.each(features, function (toggleName) {
                all.push(toggleName);
            });
            
            return all;
        },
        setFeatureClasses: function(element) {
-           _.each(featureToggles, function (value, toggleName) {
+           _.each(features, function (value, toggleName) {
                element.addClass("{0}-{1}".format(toggleName, value ? "enabled" : "disabled"));
            });
        }
